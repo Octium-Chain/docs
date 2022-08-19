@@ -1,0 +1,81 @@
+site_name: OCT Chain Docs
+site_description: OCT Chain Technology Documentation
+site_author: OCT Chain Community
+site_url: https://docs.octium.io
+use_directory_urls: false
+theme:
+  name: material
+  logo: assets/logo.png
+  font:
+    text: Roboto
+    code: Roboto Mono
+  palette:
+    primary: amber
+    scheme: slate
+    accent: yellow 
+  feature:
+    tabs: true
+extra_css:
+       - stylesheets/dark_theme.css
+       - stylesheets/codehilite.css  
+repo_name: OCT
+repo_url: https://github.com/OCT
+
+nav:
+  - Home: index.md
+  - OCT Chain:
+    - Introduction: smart-chain/guides/nc-intro.md
+    - Concepts:
+      - Consensus: smart-chain/guides/concepts/consensus.md
+      - Genesis File: smart-chain/guides/concepts/genesis.md
+    - Ecosystem: https://github.com/OCT 
+    - OCT Mainnet Explorer: https://scan.octium.io/
+    - OCT Testnet Explorer: https://testscan.octium.io/
+    - Wallet: smart-chain/wallet.md
+  - OCT For Developers:
+    - General:
+      - Create Wallet: smart-chain/developer/create-wallet.md
+      - Smart Contract: https://solidity.readthedocs.io/en/v0.7.1/
+      - Remix : https://remix.ethereum.org/
+      - Web3JS: https://web3js.readthedocs.io/en/v1.2.11/
+      - Truffle: https://www.trufflesuite.com/docs/teams/quickstart
+    - Ecosystem: https://github.com/
+    - Deploy:
+      - Remix: smart-chain/developer/deploy/remix.md
+      - Truffle: smart-chain/developer/deploy/truffle.md
+      - HardHat: smart-chain/developer/deploy/hardhat.md
+    - Tools:   
+      - Wallet Provider for DApps: smart-chain/wallet/arkane-developer.md
+    - OCT20 Tokens:
+      - Introduction: smart-chain/developer/OCT20.md
+      - Issue Token: smart-chain/developer/issue-OCT20.md
+    - Blockchain Details:
+      - OCT Chain Fullnode: smart-chain/developer/fullnode.md      
+      - RPC: smart-chain/developer/rpc.md
+    - Tutorial:
+      - Deploy NFT:  smart-chain/developer/ERC721.md      
+      - Local OCT Network: smart-chain/developer/deploy/local.md
+  - Wallets:
+    - OCT Wallet Support: smart-chain/wallet.md
+  - Mainnet Explorer: https://scan.octium.io
+  - Testnet Explorer: https://testnetcan.octium.io
+  - Faucet: https://faucet.octium.io
+  - Telegram Group :  https://t.me/octium
+  - Twitter: https://twitter.com/octium
+  - FAQ:
+    - OCT Chain FAQ:
+      - General:
+        - Info: faq/nc/general.md
+        - OCT Chain: faq/nc/nc.md
+        - Ecosystem: faq/nc/eco.md
+      - Token:
+        - Intro: faq/nc/token.md
+        - TC20: faq/nc/nrc20.md
+    - Contributing: CONTRIBUTING.md
+
+
+markdown_extensions:
+    - admonition
+    - pymdownx.arithmatex
+    - pymdownx.superfences
+    - codehilite
